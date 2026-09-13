@@ -88,7 +88,7 @@ export const HOMEPAGE_FAQS = [
     id: 'faq-contact-quote',
     question: 'How can I contact 3STACK or start a project?',
     shortAnswer:
-      'You can reach 3STACK by email at 3stacktech@gmail.com, via Instagram @3stacktechnologies, or through the interactive consultation form on our website.',
+      'You can reach 3STACK by email at 3stacktech@gmail.com, via Instagram @3stacktech, or through the interactive consultation form on our website.',
     detailedAnswer:
       'Simply click "Let’s Talk" or "Start a Conversation" on our website to open our interactive project consultation modal, where you can select your service, share project requirements, and receive a timely direct response.',
   },

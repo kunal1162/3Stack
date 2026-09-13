@@ -130,12 +130,12 @@ export function Footer({ onOpenContact }) {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/3stacktechnologies"
+                    href="https://www.instagram.com/3stacktech"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="3STACK Instagram profile"
                   >
-                    Instagram: @3stacktechnologies
+                    Instagram: @3stacktech
                   </a>
                 </li>
               </ul>
@@ -148,7 +148,7 @@ export function Footer({ onOpenContact }) {
           <div className="footer-social">
             <span>Follow</span>
             <a
-              href="https://www.instagram.com/3stacktechnologies"
+              href="https://www.instagram.com/3stacktech"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="3STACK Instagram profile"

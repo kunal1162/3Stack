@@ -26,7 +26,7 @@ export function getOrganizationSchema() {
     description:
       '3STACK is a modern technology and digital solutions company providing web development, custom software engineering, digital marketing, SEO, business workflow automation, cloud infrastructure, and AutoCAD 2D drafting.',
     email: '3stacktech@gmail.com',
-    sameAs: ['https://www.instagram.com/3stacktechnologies'],
+    sameAs: ['https://www.instagram.com/3stacktech'],
     contactPoint: [
       {
         '@type': 'ContactPoint',

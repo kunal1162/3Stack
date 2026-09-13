@@ -170,7 +170,7 @@ function runPrerender() {
         <section>
           <h2>Contact 3STACK</h2>
           <p>Email: <a href="mailto:3stacktech@gmail.com">3stacktech@gmail.com</a></p>
-          <p>Instagram: <a href="https://www.instagram.com/3stacktechnologies">@3stacktechnologies</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/3stacktech">@3stacktech</a></p>
         </section>
       </div>
     </div>

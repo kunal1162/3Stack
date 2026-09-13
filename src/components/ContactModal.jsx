@@ -290,14 +290,14 @@ export function ContactModal({ isOpen, onClose, defaultService = "" }) {
               </a>
 
               <a
-                href="https://www.instagram.com/3stacktechnologies"
+                href="https://www.instagram.com/3stacktech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="smodal-contact-item"
                 aria-label="3STACK on Instagram"
               >
                 <Instagram size={15} />
-                <span>@3stacktechnologies</span>
+                <span>@3stacktech</span>
               </a>
             </div>
           </div>
@@ -336,7 +336,7 @@ export function ContactModal({ isOpen, onClose, defaultService = "" }) {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/3stacktechnologies"
+                  href="https://www.instagram.com/3stacktech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sform-action-link"

@@ -280,8 +280,8 @@ export function Navbar({ onOpenContact }) {
             </div>
             <div>
               Instagram:{' '}
-              <a href="https://www.instagram.com/3stacktechnologies" target="_blank" rel="noopener noreferrer">
-                @3stacktechnologies
+              <a href="https://www.instagram.com/3stacktech" target="_blank" rel="noopener noreferrer">
+                @3stacktech
               </a>
             </div>
           </div>
