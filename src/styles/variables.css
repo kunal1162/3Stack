@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --bg:            #040C18;   /* primary — deep midnight navy (60%) */
+  --surface:       #091420;   /* dark surface */
+  --card:          #12212F;   /* card surface */
+  --card-hover:    #162a3c;   /* interactive card hover */
+  --border:        #1C3040;   /* hairline border */
+  --border-light:  rgba(4, 12, 24, 0.14);
+  --fg:            #F6F6F7;   /* off-white (30%) */
+  --muted:         #8C969F;   /* muted text */
+  --accent:        #00C79E;   /* emerald (10%) */
+  --accent-mid:    #12A57D;
+  --accent-dark:   #126065;
+  --accent-glow:   rgba(0, 199, 158, 0.25);
+  --ink:           #040C18;   /* text-on-accent */
+
+  /* Typography */
+  --font-display:  'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:     'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+
+  /* Layout */
+  --container:     1240px;
+  --radius-s:      6px;
+  --radius-m:      10px;
+  --radius-l:      16px;
+
+  /* Motion & Easing */
+  --ease:          cubic-bezier(0.22, 0.68, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
