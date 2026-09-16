@@ -1,163 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3STACK — Build, Grow &amp; Automate | Modern Web &amp; Software Solutions</title>
-    <meta
-      name="description"
-      content="3STACK builds modern websites, software solutions, digital experiences and business automation systems that help businesses build, grow and work smarter."
-    />
-    <link rel="canonical" href="https://3stack.tech/" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="author" content="3STACK Technologies" />
-    <meta name="theme-color" content="#00C79E" />
 
-    <!-- Open Graph Social Share Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://3stack.tech/" />
-    <meta property="og:site_name" content="3STACK Technologies" />
-    <meta property="og:title" content="3STACK — Build, Grow &amp; Automate | Modern Web &amp; Software Solutions" />
-    <meta property="og:description" content="3STACK builds modern websites, software solutions, digital experiences and business automation systems that help businesses build, grow and work smarter." />
-    <meta property="og:image" content="https://3stack.tech/images/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="3STACK — Build, Grow, Automate" />
-    <meta property="og:locale" content="en_US" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3STACK — Build, Grow &amp; Automate | Modern Web &amp; Software Solutions</title>
+  <meta name="description"
+    content="3STACK builds modern websites, software solutions, digital experiences and business automation systems that help businesses build, grow and work smarter." />
+  <link rel="canonical" href="https://3stack.in/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="3STACK Technologies" />
+  <meta name="theme-color" content="#00C79E" />
 
-    <!-- Twitter / X Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://3stack.tech/" />
-    <meta name="twitter:title" content="3STACK — Build, Grow &amp; Automate" />
-    <meta name="twitter:description" content="Modern websites, tailored business software, digital growth marketing, and workflow automation." />
-    <meta name="twitter:image" content="https://3stack.tech/images/og-image.jpg" />
-    <meta name="twitter:image:alt" content="3STACK — Build, Grow, Automate" />
+  <!-- Open Graph Social Share Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://3stack.tech/" />
+  <meta property="og:site_name" content="3STACK Technologies" />
+  <meta property="og:title" content="3STACK — Build, Grow &amp; Automate | Modern Web &amp; Software Solutions" />
+  <meta property="og:description"
+    content="3STACK builds modern websites, software solutions, digital experiences and business automation systems that help businesses build, grow and work smarter." />
+  <meta property="og:image" content="https://3stack.tech/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="3STACK — Build, Grow, Automate" />
+  <meta property="og:locale" content="en_US" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Twitter / X Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://3stack.tech/" />
+  <meta name="twitter:title" content="3STACK — Build, Grow &amp; Automate" />
+  <meta name="twitter:description"
+    content="Modern websites, tailored business software, digital growth marketing, and workflow automation." />
+  <meta name="twitter:image" content="https://3stack.tech/images/og-image.jpg" />
+  <meta name="twitter:image:alt" content="3STACK — Build, Grow, Automate" />
 
-    <!-- Site Identity & Favicons -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Critical Preload & Anti-FOUC Instant Preloader Styles -->
-    <style>
-      html, body {
-        background-color: #040C18 !important;
-        color: #F8FAFC;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
+  <!-- Site Identity & Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Critical Preload & Anti-FOUC Instant Preloader Styles -->
+  <style>
+    html,
+    body {
+      background-color: #040C18 !important;
+      color: #F8FAFC;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Instant Loading HUD Shield */
+    #app-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999999;
+      background-color: #040C18;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
+      pointer-events: auto;
+    }
+
+    #app-preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-beacon {
+      width: 64px;
+      height: 64px;
+      animation: preloaderPulse 1.8s ease-in-out infinite;
+    }
+
+    .preloader-track {
+      width: 170px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preloader-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, #00C79E, #00D9F5);
+      border-radius: 999px;
+      animation: preloaderSlide 1.3s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+      box-shadow: 0 0 14px rgba(0, 199, 158, 0.7);
+    }
+
+    .preloader-caption {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: #00C79E;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .preloader-caption-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #00C79E;
+      box-shadow: 0 0 8px #00C79E;
+      animation: preloaderDotBlink 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes preloaderSlide {
+      0% {
+        left: -40%;
       }
 
-      /* Instant Loading HUD Shield */
-      #app-preloader {
-        position: fixed;
-        inset: 0;
-        z-index: 99999999;
-        background-color: #040C18;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
-        pointer-events: auto;
+      100% {
+        left: 90%;
+      }
+    }
+
+    @keyframes preloaderPulse {
+
+      0%,
+      100% {
+        transform: scale(0.96);
+        opacity: 0.85;
+        filter: drop-shadow(0 0 8px rgba(0, 199, 158, 0.3));
       }
 
-      #app-preloader.loaded {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+      50% {
+        transform: scale(1.04);
+        opacity: 1;
+        filter: drop-shadow(0 0 20px rgba(0, 199, 158, 0.65));
+      }
+    }
+
+    @keyframes preloaderDotBlink {
+      0% {
+        opacity: 0.3;
       }
 
-      .preloader-beacon {
-        width: 64px;
-        height: 64px;
-        animation: preloaderPulse 1.8s ease-in-out infinite;
+      100% {
+        opacity: 1;
       }
+    }
 
-      .preloader-track {
-        width: 170px;
-        height: 3px;
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 999px;
-        overflow: hidden;
-        position: relative;
-      }
+    /* Visually hides raw fallback markup from human eyes while maintaining 100% search-engine crawlability */
+    .seo-crawler-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
 
-      .preloader-bar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(90deg, #00C79E, #00D9F5);
-        border-radius: 999px;
-        animation: preloaderSlide 1.3s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
-        box-shadow: 0 0 14px rgba(0, 199, 158, 0.7);
-      }
-
-      .preloader-caption {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        color: #00C79E;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .preloader-caption-dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: #00C79E;
-        box-shadow: 0 0 8px #00C79E;
-        animation: preloaderDotBlink 1s ease-in-out infinite alternate;
-      }
-
-      @keyframes preloaderSlide {
-        0% { left: -40%; }
-        100% { left: 90%; }
-      }
-
-      @keyframes preloaderPulse {
-        0%, 100% { transform: scale(0.96); opacity: 0.85; filter: drop-shadow(0 0 8px rgba(0, 199, 158, 0.3)); }
-        50% { transform: scale(1.04); opacity: 1; filter: drop-shadow(0 0 20px rgba(0, 199, 158, 0.65)); }
-      }
-
-      @keyframes preloaderDotBlink {
-        0% { opacity: 0.3; }
-        100% { opacity: 1; }
-      }
-
-      /* Visually hides raw fallback markup from human eyes while maintaining 100% search-engine crawlability */
-      .seo-crawler-only {
-        position: absolute !important;
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        clip: rect(0, 0, 0, 0) !important;
-        white-space: nowrap !important;
-        border: 0 !important;
-      }
-    </style>
-
-    <!-- Structured JSON-LD Data for Immediate Crawler Discovery -->
-    <script type="application/ld+json">
+  <!-- Structured JSON-LD Data for Immediate Crawler Discovery -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
@@ -206,88 +228,91 @@
       ]
     }
     </script>
-  </head>
-  <body>
-    <!-- Instant Preloader Screen (Eliminates FOUC and plain HTML flash) -->
-    <div id="app-preloader" role="status" aria-live="polite" aria-label="Loading 3STACK system">
-      <div class="preloader-beacon">
-        <img
-          src="/images/3stack-symbol.png"
-          alt="3STACK"
-          width="64"
-          height="64"
-          style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 14px rgba(0, 199, 158, 0.6));"
-        />
-      </div>
-      <div class="preloader-track">
-        <div class="preloader-bar"></div>
-      </div>
-      <div class="preloader-caption">
-        <span class="preloader-caption-dot"></span>
-        <span>INITIALIZING 3STACK</span>
-      </div>
+</head>
+
+<body>
+  <!-- Instant Preloader Screen (Eliminates FOUC and plain HTML flash) -->
+  <div id="app-preloader" role="status" aria-live="polite" aria-label="Loading 3STACK system">
+    <div class="preloader-beacon">
+      <img src="/images/3stack-symbol.png" alt="3STACK" width="64" height="64"
+        style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 14px rgba(0, 199, 158, 0.6));" />
     </div>
-
-    <!-- SEO crawlable fallback: Indexed by search engines & AI bots without flashing raw text -->
-    <div id="root">
-      <div class="seo-crawler-only">
-        <header>
-          <a href="/" aria-label="3STACK">3STACK — Build, Grow &amp; Automate</a>
-          <nav aria-label="Quick Navigation">
-            <ul>
-              <li><a href="/#services">Services</a></li>
-              <li><a href="/#why">Solutions</a></li>
-              <li><a href="/#work">Work</a></li>
-              <li><a href="/#capabilities">About</a></li>
-              <li><a href="/#faq">FAQ</a></li>
-              <li><a href="/#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        <main>
-          <section>
-            <h1>3STACK — BUILD. GROW. AUTOMATE.</h1>
-            <p>We build modern digital experiences, tailored software solutions, and business automation systems that help businesses work smarter and scale effectively.</p>
-          </section>
-
-          <section id="services">
-            <h2>Our Core Technology Services</h2>
-            <article>
-              <h3><a href="/services/web-design-development">App &amp; Web Designing</a></h3>
-              <p>Modern, responsive, user-focused websites and applications designed to represent your business effectively and drive conversions.</p>
-            </article>
-            <article>
-              <h3><a href="/services/digital-marketing-seo">Digital Marketing &amp; SEO</a></h3>
-              <p>Help businesses grow their digital presence, connect with potential customers, and improve organic search visibility online.</p>
-            </article>
-            <article>
-              <h3><a href="/services/business-automation">Business Workflow Automation</a></h3>
-              <p>Simplify repetitive tasks, connect tools, and build automated workflows to save time and eliminate manual errors.</p>
-            </article>
-            <article>
-              <h3><a href="/services/software-development">Custom Software Development</a></h3>
-              <p>Custom software and tailored digital tools built to solve specific operational problems and improve business productivity.</p>
-            </article>
-            <article>
-              <h3><a href="/services/autocad-designs">AutoCAD Designs &amp; 2D Drafting</a></h3>
-              <p>Accurate 2D drafting, layout planning, and technical design support for engineering and architectural projects.</p>
-            </article>
-            <article>
-              <h3><a href="/services/cloud-solutions">Cloud Solutions &amp; Infrastructure</a></h3>
-              <p>Reliable cloud hosting setup, system deployment, SSL security, and automated data backups.</p>
-            </article>
-          </section>
-
-          <section id="contact">
-            <h2>Contact 3STACK</h2>
-            <p>Email: <a href="mailto:3stacktech@gmail.com">3stacktech@gmail.com</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/3stacktech">@3stacktech</a></p>
-          </section>
-        </main>
-      </div>
+    <div class="preloader-track">
+      <div class="preloader-bar"></div>
     </div>
+    <div class="preloader-caption">
+      <span class="preloader-caption-dot"></span>
+      <span>INITIALIZING 3STACK</span>
+    </div>
+  </div>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- SEO crawlable fallback: Indexed by search engines & AI bots without flashing raw text -->
+  <div id="root">
+    <div class="seo-crawler-only">
+      <header>
+        <a href="/" aria-label="3STACK">3STACK — Build, Grow &amp; Automate</a>
+        <nav aria-label="Quick Navigation">
+          <ul>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#why">Solutions</a></li>
+            <li><a href="/#work">Work</a></li>
+            <li><a href="/#capabilities">About</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h1>3STACK — BUILD. GROW. AUTOMATE.</h1>
+          <p>We build modern digital experiences, tailored software solutions, and business automation systems that help
+            businesses work smarter and scale effectively.</p>
+        </section>
+
+        <section id="services">
+          <h2>Our Core Technology Services</h2>
+          <article>
+            <h3><a href="/services/web-design-development">App &amp; Web Designing</a></h3>
+            <p>Modern, responsive, user-focused websites and applications designed to represent your business
+              effectively and drive conversions.</p>
+          </article>
+          <article>
+            <h3><a href="/services/digital-marketing-seo">Digital Marketing &amp; SEO</a></h3>
+            <p>Help businesses grow their digital presence, connect with potential customers, and improve organic search
+              visibility online.</p>
+          </article>
+          <article>
+            <h3><a href="/services/business-automation">Business Workflow Automation</a></h3>
+            <p>Simplify repetitive tasks, connect tools, and build automated workflows to save time and eliminate manual
+              errors.</p>
+          </article>
+          <article>
+            <h3><a href="/services/software-development">Custom Software Development</a></h3>
+            <p>Custom software and tailored digital tools built to solve specific operational problems and improve
+              business productivity.</p>
+          </article>
+          <article>
+            <h3><a href="/services/autocad-designs">AutoCAD Designs &amp; 2D Drafting</a></h3>
+            <p>Accurate 2D drafting, layout planning, and technical design support for engineering and architectural
+              projects.</p>
+          </article>
+          <article>
+            <h3><a href="/services/cloud-solutions">Cloud Solutions &amp; Infrastructure</a></h3>
+            <p>Reliable cloud hosting setup, system deployment, SSL security, and automated data backups.</p>
+          </article>
+        </section>
+
+        <section id="contact">
+          <h2>Contact 3STACK</h2>
+          <p>Email: <a href="mailto:3stacktech@gmail.com">3stacktech@gmail.com</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/3stacktech">@3stacktech</a></p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
