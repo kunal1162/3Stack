@@ -300,17 +300,18 @@ button {
 
 /* Actual 3STACK logo image */
 .nav-logo-img {
-  height: 36px;
+  height: 42px;
   width: auto;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 8px rgba(0, 199, 158, 0.25));
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(0, 199, 158, 0.3));
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 .nav-logo-link:hover .nav-logo-img {
-  filter: drop-shadow(0 0 14px rgba(0, 199, 158, 0.5));
-  opacity: 0.92;
+  filter: drop-shadow(0 0 16px rgba(0, 199, 158, 0.6));
+  transform: scale(1.03);
+  opacity: 0.95;
 }
 
 /* Sound-wave / Audio micro equalizer */
@@ -3755,17 +3756,18 @@ button {
 }
 
 .footer-logo-img {
-  height: 44px;
+  height: 52px;
   width: auto;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 6px rgba(0, 199, 158, 0.2));
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(0, 199, 158, 0.25));
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 .footer-logo-link:hover .footer-logo-img {
-  filter: drop-shadow(0 0 14px rgba(0, 199, 158, 0.45));
-  opacity: 0.88;
+  filter: drop-shadow(0 0 16px rgba(0, 199, 158, 0.5));
+  transform: scale(1.02);
+  opacity: 0.92;
 }
 
 .footer-desc {
@@ -4605,10 +4607,10 @@ button {
 }
 
 .smodal-logo {
-  height: 34px;
+  height: 42px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 8px rgba(0, 199, 158, 0.3));
+  filter: drop-shadow(0 0 10px rgba(0, 199, 158, 0.35));
 }
 
 .smodal-left-body {

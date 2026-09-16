@@ -55,8 +55,8 @@ export function Footer({ onOpenContact }) {
                   src="/images/3stack-logo.png"
                   alt="3STACK — Build, Grow, Automate"
                   className="footer-logo-img"
-                  width="135"
-                  height="44"
+                  width="48"
+                  height="55"
                 />
               </picture>
             </a>

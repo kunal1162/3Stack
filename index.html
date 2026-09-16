@@ -43,6 +43,7 @@
 
     <!-- Site Identity & Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -210,10 +211,13 @@
     <!-- Instant Preloader Screen (Eliminates FOUC and plain HTML flash) -->
     <div id="app-preloader" role="status" aria-live="polite" aria-label="Loading 3STACK system">
       <div class="preloader-beacon">
-        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
-          <path d="M16 3L28 9.5V22.5L16 29L4 22.5V9.5L16 3Z" stroke="#00C79E" stroke-width="2.2" stroke-linejoin="round"/>
-          <path d="M16 3V16M16 16L28 9.5M16 16L4 9.5M16 16V29" stroke="#00D9F5" stroke-width="1.8" stroke-linejoin="round" opacity="0.85"/>
-        </svg>
+        <img
+          src="/images/3stack-symbol.png"
+          alt="3STACK"
+          width="64"
+          height="64"
+          style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 14px rgba(0, 199, 158, 0.6));"
+        />
       </div>
       <div class="preloader-track">
         <div class="preloader-bar"></div>

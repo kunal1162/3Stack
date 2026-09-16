@@ -269,6 +269,8 @@ export function ContactModal({ isOpen, onClose, defaultService = "" }) {
               src="/images/3stack-logo.png"
               alt="3STACK"
               className="smodal-logo"
+              width="42"
+              height="48"
             />
           </div>
 
