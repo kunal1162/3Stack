@@ -206,26 +206,38 @@ export default function Work() {
                       paddingTop: "1.5rem",
                     }}
                   >
-                    <a
-                      href={project.link}
-                      style={{
-                        color: "var(--text-primary)",
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "0.5rem",
-                        fontWeight: 600,
-                        transition: "color 0.3s ease",
-                      }}
-                      target="blank"
-                      onMouseOver={(e) =>
-                        (e.currentTarget.style.color = "var(--accent-primary)")
-                      }
-                      onMouseOut={(e) =>
-                        (e.currentTarget.style.color = "var(--text-primary)")
-                      }
-                    >
-                      Visit Site <ArrowUpRight size={18} />
-                    </a>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        style={{
+                          color: "var(--text-primary)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                          fontWeight: 600,
+                          transition: "color 0.3s ease",
+                        }}
+                        target="blank"
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.color = "var(--accent-primary)")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.color = "var(--text-primary)")
+                        }
+                      >
+                        Visit Site <ArrowUpRight size={18} />
+                      </a>
+                    ) : (
+                      <span
+                        style={{
+                          color: "var(--text-secondary)",
+                          fontSize: "0.875rem",
+                          fontStyle: "italic",
+                        }}
+                      >
+                        Coming Soon
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
