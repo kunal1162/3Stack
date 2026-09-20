@@ -1,0 +1,128 @@
+.services-header {
+  padding-top: 160px;
+  padding-bottom: 3rem;
+}
+
+.services-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.service-detail-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-detail-card:last-child {
+  border-bottom: none;
+}
+
+/* Alternate layout for even cards */
+.service-detail-card:nth-child(even) .service-detail-content {
+  order: 2;
+}
+
+.service-detail-card:nth-child(even) .service-detail-visual {
+  order: 1;
+}
+
+.service-icon-large {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+}
+
+.service-detail-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.visual-card {
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-placeholder {
+  position: relative;
+  color: var(--text-muted);
+}
+
+.visual-placeholder svg {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: pulse 3s infinite;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .service-detail-card {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+  
+  .service-detail-card .service-detail-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+}

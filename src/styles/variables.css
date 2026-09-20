@@ -1,31 +1,53 @@
 :root {
-  /* Colors */
-  --bg:            #040C18;   /* primary — deep midnight navy (60%) */
-  --surface:       #091420;   /* dark surface */
-  --card:          #12212F;   /* card surface */
-  --card-hover:    #162a3c;   /* interactive card hover */
-  --border:        #1C3040;   /* hairline border */
-  --border-light:  rgba(4, 12, 24, 0.14);
-  --fg:            #F6F6F7;   /* off-white (30%) */
-  --muted:         #8C969F;   /* muted text */
-  --accent:        #00C79E;   /* emerald (10%) */
-  --accent-mid:    #12A57D;
-  --accent-dark:   #126065;
-  --accent-glow:   rgba(0, 199, 158, 0.25);
-  --ink:           #040C18;   /* text-on-accent */
-
+  /* Colors - Premium Dark Theme */
+  --bg-primary: #070707;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #525252;
+  
+  /* Brand Accents */
+  --accent-primary: #10b981; /* Emerald Green */
+  --accent-secondary: #0ea5e9; /* Light Blue/Teal */
+  --accent-tertiary: #3b82f6; /* Blue */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.16);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(17, 17, 17, 0.6);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+  
   /* Typography */
-  --font-display:  'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono:     'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
-
-  /* Layout */
-  --container:     1240px;
-  --radius-s:      6px;
-  --radius-m:      10px;
-  --radius-l:      16px;
-
-  /* Motion & Easing */
-  --ease:          cubic-bezier(0.22, 0.68, 0.2, 1);
-  --ease-spring:   cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 2rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Z-index */
+  --z-negative: -1;
+  --z-normal: 1;
+  --z-overlay: 10;
+  --z-header: 100;
+  --z-modal: 1000;
 }

@@ -1,31 +1,4 @@
-# robots.txt for 3STACK (https://3stack.tech)
 User-agent: *
 Allow: /
 
-# Explicit crawler permissions for search and answer engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Yandex
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-# Sitemap index
-Sitemap: https://3stack.tech/sitemap.xml
+Sitemap: https://3stack.agency/sitemap.xml

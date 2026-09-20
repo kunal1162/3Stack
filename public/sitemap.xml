@@ -1,91 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Homepage -->
-  <url>
-    <loc>https://3stack.tech/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/3stack-logo.png</image:loc>
-      <image:title>3STACK Technology and Digital Solutions</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://3stack.tech/images/og-image.jpg</image:loc>
-      <image:title>3STACK — Build, Grow and Automate</image:title>
-    </image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url><loc>https://3stack.agency/</loc><lastmod>2026-09-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://3stack.agency/services</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://3stack.agency/portfolio</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/about</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/blog</loc><lastmod>2026-09-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/contact</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://3stack.agency/privacy</loc><lastmod>2026-09-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://3stack.agency/terms</loc><lastmod>2026-09-20</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
-  <!-- Web & App Design & Development -->
-  <url>
-    <loc>https://3stack.tech/services/web-design-development</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-web-design.webp</image:loc>
-      <image:title>Modern Responsive Web and Mobile App UI Design Interface</image:title>
-    </image:image>
-  </url>
+  <!-- Service Detail Pages -->
+  <url><loc>https://3stack.agency/services/web-development</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/services/app-development</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/services/digital-marketing</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/services/business-automation</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/services/web-design</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://3stack.agency/services/autocad</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Digital Marketing & SEO -->
-  <url>
-    <loc>https://3stack.tech/services/digital-marketing-seo</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-marketing.webp</image:loc>
-      <image:title>Digital Marketing Analytics and Search Engine Visibility Dashboard</image:title>
-    </image:image>
-  </url>
-
-  <!-- Business Workflow Automation -->
-  <url>
-    <loc>https://3stack.tech/services/business-automation</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-automation.webp</image:loc>
-      <image:title>Business Automation and Connected Node Workflow Pipeline System</image:title>
-    </image:image>
-  </url>
-
-  <!-- Custom Software Development -->
-  <url>
-    <loc>https://3stack.tech/services/software-development</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-software.webp</image:loc>
-      <image:title>Custom Business Software Development and Engineering Architecture</image:title>
-    </image:image>
-  </url>
-
-  <!-- AutoCAD Designs & Drafting -->
-  <url>
-    <loc>https://3stack.tech/services/autocad-designs</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-autocad.webp</image:loc>
-      <image:title>AutoCAD 2D Architectural Floor Plan and Technical CAD Drafting</image:title>
-    </image:image>
-  </url>
-
-  <!-- Cloud Infrastructure & Hosting Solutions -->
-  <url>
-    <loc>https://3stack.tech/services/cloud-solutions</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://3stack.tech/images/service-cloud.webp</image:loc>
-      <image:title>Cloud Infrastructure Hosting Setup and System Operations</image:title>
-    </image:image>
-  </url>
+  <!-- Blog Detail Pages -->
+  <url><loc>https://3stack.agency/blog/future-of-react-server-components</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://3stack.agency/blog/maximizing-roi-with-ai-marketing</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://3stack.agency/blog/why-your-business-needs-custom-crm</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
