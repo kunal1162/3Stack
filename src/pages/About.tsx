@@ -78,7 +78,7 @@ export default function About() {
             </div>
             
             <h1 className="section-title" style={{ fontSize: 'clamp(3rem, 5vw, 4rem)', lineHeight: 1.1 }}>
-              Architects of the <span className="text-gradient">Digital Future</span>
+              About <span className="text-gradient">3Stack IT Agency</span>
             </h1>
             <p className="section-subtitle mt-md" style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', lineHeight: 1.6 }}>
               We are a collective of developers, designers, and strategists passionate about building digital experiences that drive real business growth and streamline operations.

@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="contact-grid">
             {/* Contact Info */}
             <div className="contact-info animate-fade-in-up">
-              <h1 className="section-title">Let's talk about your project</h1>
+              <h1 className="section-title">Contact 3Stack IT Agency</h1>
               <p className="contact-subtitle">
                 Whether you have a clear vision or need help defining it, our team is ready to bring your ideas to life. Fill out the form, and we'll get back to you within 24 hours.
               </p>

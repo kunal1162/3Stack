@@ -44,6 +44,7 @@ export const Navbar: React.FC = () => {
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'About', path: '/about' },
     { name: 'Blog', path: '/blog' },
+    { name: 'FAQ', path: '/faq' },
   ];
 
   return (

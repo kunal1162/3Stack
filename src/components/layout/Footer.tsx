@@ -52,6 +52,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/portfolio">Our Work</Link></li>
               <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/faq">FAQ & Guides</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -90,7 +91,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} 3Stack Digital Agency. All rights reserved.</p>
+          <p>&copy; {currentYear} 3Stack IT Agency. All rights reserved.</p>
           <div className="footer-legal">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>

@@ -59,13 +59,18 @@ export default function Home() {
           <div className="glow-circle bottom-right"></div>
         </div>
         <div className="container hero-container text-center">
-          <h1 className="hero-title animate-fade-in-up">
-            Digital Experiences <br />
-            <span className="text-gradient">Built For Growth</span>
+          <h1 className="hero-title animate-fade-in-up" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1 }}>
+            Premium Web Development & <br />
+            <span className="text-gradient">Digital Marketing Agency</span>
           </h1>
-          <p className="hero-subtitle animate-fade-in-up delay-100">
-            <strong>What does 3Stack do?</strong> 3Stack is a premium IT and digital marketing agency. We engineer custom <a href="/services/web-development" style={{textDecoration: 'underline'}}>web applications</a>, build <a href="/services/app-development" style={{textDecoration: 'underline'}}>mobile apps</a>, and execute <a href="/services/digital-marketing" style={{textDecoration: 'underline'}}>AI-driven marketing</a> campaigns to scale your business.
-          </p>
+          <div className="hero-subtitle animate-fade-in-up delay-100" style={{ textAlign: 'left', maxWidth: '800px', margin: '0 auto' }}>
+            <p style={{ marginBottom: '1rem' }}>
+              <strong>What is 3Stack IT Agency?</strong> 3Stack is a premium software engineering and digital marketing agency headquartered in Jaipur, serving global enterprises and scaling startups. We specialize in engineering high-performance <a href="/services/web-development" style={{textDecoration: 'underline'}}>custom web applications</a>, engaging <a href="/services/app-development" style={{textDecoration: 'underline'}}>mobile apps</a>, and executing data-driven <a href="/services/digital-marketing" style={{textDecoration: 'underline'}}>digital marketing campaigns</a>.
+            </p>
+            <p>
+              <strong>Who do we serve?</strong> We partner with ambitious B2B companies, SaaS startups, and e-commerce brands who need to replace manual workflows with <a href="/services/business-automation" style={{textDecoration: 'underline'}}>intelligent business automation</a> and scale their revenue through AI-driven SEO and PPC strategies.
+            </p>
+          </div>
           <div className="hero-actions animate-fade-in-up delay-200">
             <Button href="/contact" size="lg">Start a Project</Button>
             <Button href="/portfolio" variant="outline" size="lg">View Our Work</Button>

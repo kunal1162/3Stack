@@ -16,14 +16,14 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   description, 
   keywords,
   canonicalUrl,
-  ogImage = 'https://3stack.agency/3stack-logo.png',
+  ogImage = 'https://3stack.in/3stack-logo.png',
   schema,
   type = 'website'
 }) => {
-  const siteTitle = `${title} | 3Stack IT Agency`;
+  const siteTitle = title.includes('3Stack') ? title : `${title} | 3Stack IT Agency`;
   
   // Dynamically resolve canonical URL for SEO indexing
-  const baseUrl = 'https://3stack.agency';
+  const baseUrl = 'https://3stack.in';
   const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
   const finalCanonicalUrl = canonicalUrl || `${baseUrl}${currentPath}`;
 

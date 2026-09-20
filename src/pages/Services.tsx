@@ -85,8 +85,8 @@ export default function Services() {
           </div>
           
           <h1 className="hero-title animate-fade-in-up delay-100" style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', marginBottom: '1.5rem', lineHeight: 1.1 }}>
-            Digital Solutions To <br/>
-            <span className="text-gradient">Scale Your Business</span>
+            Digital IT Agency <br/>
+            <span className="text-gradient">Services</span>
           </h1>
           
           <p className="hero-subtitle animate-fade-in-up delay-200" style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>

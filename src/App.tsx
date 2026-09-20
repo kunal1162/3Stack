@@ -15,6 +15,7 @@ import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import NotFound from './pages/NotFound';
+import FAQPage from './pages/FAQPage';
 import { WhatsAppFloat } from './components/ui/WhatsAppFloat';
 import { CallFloat } from './components/ui/CallFloat';
 import './App.css';
@@ -63,6 +64,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQPage />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />

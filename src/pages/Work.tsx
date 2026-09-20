@@ -10,7 +10,7 @@ export default function Work() {
       image:
         "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80",
       stats: "Interactive Design",
-      link: "https://royalwedding-one.vercel.app",
+      link: "",
     },
     {
       title: "Gym Website",
@@ -111,7 +111,7 @@ export default function Work() {
               className="section-title"
               style={{ fontSize: "clamp(3rem, 5vw, 4rem)" }}
             >
-              Projects We're <span className="text-gradient">Proud Of</span>
+              Our Portfolio & <span className="text-gradient">Case Studies</span>
             </h1>
             <p
               className="section-subtitle"

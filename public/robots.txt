@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://3stack.agency/sitemap.xml
+Sitemap: https://3stack.in/sitemap.xml
