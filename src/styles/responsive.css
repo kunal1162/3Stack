@@ -19,6 +19,9 @@
 
 /* Small Devices (Landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
   .grid-cols-2 {
     grid-template-columns: 1fr;
   }
