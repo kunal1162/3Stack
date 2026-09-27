@@ -1,0 +1,159 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-header);
+  transition: background-color var(--transition-normal),
+              backdrop-filter var(--transition-normal),
+              padding var(--transition-normal),
+              box-shadow var(--transition-normal);
+  padding: 1.5rem 0;
+  background-color: transparent;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.navbar.scrolled {
+  padding: 1rem 0;
+  background-color: rgba(7, 7, 7, 0.72);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  /* No solid border — use a faint gradient pseudo-line instead */
+  border-bottom: none;
+  box-shadow:
+    0 1px 0 0 rgba(16, 185, 129, 0.08),   /* subtle emerald line */
+    0 4px 24px rgba(0, 0, 0, 0.18);        /* soft depth shadow */
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-accent {
+  color: var(--accent-primary);
+  margin-right: 0.1rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: width var(--transition-normal);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.mobile-menu-btn {
+  color: var(--text-primary);
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  /* NO border-bottom here — it rendered as a 1px dark seam across the
+     full screen width even when the menu was closed (max-height:0 clips
+     content but NOT borders in the border-box model). */
+  border-bottom: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal);
+  /* Remove shadow on closed state — only show when open */
+}
+
+.mobile-menu.open {
+  max-height: 400px;
+  /* Border and shadow only render when menu is actually open */
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav-links {
+  padding: 1rem var(--space-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-link {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--accent-primary);
+}
+
+.mobile-nav-action {
+  padding: 1.5rem 0 1rem;
+}
+
+/* Utilities for responsive display */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: flex;
+  }
+}
