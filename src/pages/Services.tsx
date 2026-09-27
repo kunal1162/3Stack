@@ -64,23 +64,23 @@ export default function Services() {
   const serviceSchemas = services.map(service => ({
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://3stack.agency/services/${service.id}/#service`,
+    '@id': `https://3stack.in/services/${service.id}/#service`,
     'name': service.title,
     'serviceType': service.title,
     'description': service.description,
     'provider': {
       '@type': 'Organization',
-      '@id': 'https://3stack.agency/#organization',
-      'name': '3Stack IT Agency'
+      '@id': 'https://3stack.in/#organization',
+      'name': '3Stack'
     }
   }));
 
   return (
     <>
       <SEOHead
-        title="Our Services | 3Stack IT Agency"
+        title="Our Services | 3Stack"
         description="Explore 3Stack's premium digital services: custom web development, mobile app development, digital marketing, business automation, UI/UX design, and AutoCAD drafting."
-        keywords="Web Development Services, IT Agency Services, Mobile App Development, Digital Marketing Experts, Best SEO Services, Business Automation Consulting, Custom UI/UX Design"
+        keywords="3Stack services, 3Stack, 3 Stack, 3stack.in, Web Development Services, IT Agency Services, Mobile App Development, Digital Marketing Experts, Best SEO Services, Business Automation Consulting, Custom UI/UX Design"
         breadcrumbs={breadcrumbs}
         schema={serviceSchemas}
       />
@@ -154,18 +154,14 @@ export default function Services() {
                 
                 {/* Visual Representation with semantic img */}
                 <div className="service-detail-visual">
-                  <div className="glass-card visual-card" style={{ position: 'relative', overflow: 'hidden', padding: 0, height: '320px' }}>
+                  <div className="glass-card visual-card" style={{ position: 'relative', overflow: 'hidden', padding: 0 }}>
                     <img 
                       src={service.image} 
                       alt={`${service.title} by 3Stack IT Agency`} 
                       loading="lazy"
                       style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
                     />
-                    <div className="visual-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, var(--bg-primary) 0%, transparent 100%)', opacity: 0.8 }}></div>
-                    <div className="visual-placeholder" style={{ zIndex: 10 }}>
-                      {service.icon}
-                      <div className="pulse-ring"></div>
-                    </div>
+                    <div className="visual-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, var(--bg-primary) 0%, transparent 100%)', opacity: 0.8, pointerEvents: 'none' }}></div>
                   </div>
                 </div>
               </article>

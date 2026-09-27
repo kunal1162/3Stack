@@ -32,7 +32,7 @@ export default function BlogDetail() {
     { name: article.title, url: `/blog/${article.slug}` }
   ];
 
-  const canonicalUrl = `https://3stack.agency/blog/${article.slug}`;
+  const canonicalUrl = `https://3stack.in/blog/${article.slug}`;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -46,17 +46,17 @@ export default function BlogDetail() {
     'dateModified': article.dateModified,
     'author': {
       '@type': 'Organization',
-      '@id': 'https://3stack.agency/#organization',
+      '@id': 'https://3stack.in/#organization',
       'name': article.author,
-      'url': 'https://3stack.agency'
+      'url': 'https://3stack.in'
     },
     'publisher': {
       '@type': 'Organization',
-      '@id': 'https://3stack.agency/#organization',
-      'name': '3Stack IT Agency',
+      '@id': 'https://3stack.in/#organization',
+      'name': '3Stack',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://3stack.agency/3stack-logo.png'
+        'url': 'https://3stack.in/3stack-logo.png'
       }
     }
   };

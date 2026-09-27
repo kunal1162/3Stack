@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 import './Navbar.css';
@@ -9,6 +9,7 @@ export const Navbar: React.FC = () => {
   const [isHidden, setIsHidden] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const lastScrollY = React.useRef(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +39,22 @@ export const Navbar: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    closeMobileMenu();
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleNavLinkClick = (path: string) => (e: React.MouseEvent) => {
+    closeMobileMenu();
+    if (path === '/' && location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
@@ -49,7 +66,7 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
       <div className="container navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
           <img src="/3stack-logo.png" alt="3Stack Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
         </Link>
 
@@ -60,6 +77,7 @@ export const Navbar: React.FC = () => {
               key={link.name} 
               to={link.path}
               className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+              onClick={handleNavLinkClick(link.path)}
             >
               {link.name}
             </NavLink>
@@ -90,7 +108,7 @@ export const Navbar: React.FC = () => {
               key={link.name} 
               to={link.path}
               className="mobile-nav-link"
-              onClick={closeMobileMenu}
+              onClick={handleNavLinkClick(link.path)}
             >
               {link.name}
             </NavLink>

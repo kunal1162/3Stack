@@ -10,8 +10,9 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEOHead
-        title="Privacy Policy | 3Stack IT Agency"
-        description="Learn how 3Stack IT Agency collects, protects, and handles personal and commercial data across our web services."
+        title="Privacy Policy | 3Stack"
+        description="Learn how 3Stack collects, protects, and handles personal and commercial data across our web services."
+        keywords="Privacy Policy, 3Stack Privacy, 3Stack, 3 Stack, 3stack.in"
         breadcrumbs={breadcrumbs}
       />
       <section className="section" style={{ paddingTop: '140px', minHeight: '80vh' }}>
@@ -32,7 +33,7 @@ export default function PrivacyPolicy() {
                
                <h2 style={{ marginTop: '2rem', fontSize: '1.4rem' }}>1. Overview & Scope</h2>
                <p style={{ color: 'var(--text-secondary)', marginTop: '0.75rem', lineHeight: 1.8 }}>
-                 3Stack IT Agency ("we", "our", "us") values your privacy. This Privacy Policy details how we collect, store, and safeguard information gathered through our website (<a href="https://3stack.agency" style={{ color: 'var(--accent-primary)' }}>https://3stack.agency</a>) and client communications.
+                 3Stack IT Agency ("we", "our", "us") values your privacy. This Privacy Policy details how we collect, store, and safeguard information gathered through our website (<a href="https://3stack.in" style={{ color: 'var(--accent-primary)' }}>https://3stack.in</a>) and client communications.
                </p>
 
                <h2 style={{ marginTop: '2rem', fontSize: '1.4rem' }}>2. Information We Collect</h2>

@@ -14,8 +14,9 @@
   /* Enough top padding: navbar height (~80px) + 3.5rem breathing room */
   padding-top: calc(80px + 3.5rem);
   padding-bottom: 5rem;
-  /* Explicit background ensures continuity with the body/navbar area */
-  background-color: var(--bg-primary);
+  /* Pure deep dark base matching /services with subtle emerald top ambient glow */
+  background-color: #040807;
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.08) 0%, rgba(4, 8, 7, 1) 70%);
 }
 
 
@@ -27,13 +28,14 @@
   pointer-events: none;
 }
 
-/* Animated radial glow orbs */
+/* Animated radial glow orbs (Desktop ambient light) */
 .glow-circle {
   position: absolute;
   border-radius: 50%;
-  filter: blur(110px);
-  opacity: 0.35;
+  filter: blur(120px);
+  opacity: 0.22;
   animation: glowPulse 10s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 .glow-circle.top-left {
@@ -41,7 +43,7 @@
   left: -10%;
   width: 560px;
   height: 560px;
-  background: radial-gradient(circle, #10b981 0%, #0ea5e9 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.8) 0%, rgba(14, 165, 233, 0.4) 70%);
 }
 
 .glow-circle.bottom-right {
@@ -49,13 +51,13 @@
   right: -8%;
   width: 640px;
   height: 640px;
-  background: radial-gradient(circle, #0ea5e9 0%, #3b82f6 70%);
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.6) 0%, rgba(16, 185, 129, 0.2) 70%);
   animation-delay: -5s;
 }
 
 @keyframes glowPulse {
-  0%   { opacity: 0.28; transform: scale(1); }
-  100% { opacity: 0.42; transform: scale(1.08); }
+  0%   { opacity: 0.16; transform: scale(0.96); }
+  100% { opacity: 0.26; transform: scale(1.04); }
 }
 
 /* Subtle dot-grid overlay */
@@ -123,12 +125,12 @@
   font-weight: 800;
   line-height: 1.08;
   letter-spacing: -0.035em;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #10b981 0%, #0ea5e9 55%, #3b82f6 100%);
+  background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,7 +140,7 @@
 /* ---------- Subtitle ---------- */
 .hero-subtitle {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: var(--text-secondary);
+  color: #9ca3af;
   max-width: 620px;
   margin: 0 auto 2.5rem;
   line-height: 1.65;
@@ -404,21 +406,36 @@
    ================================================ */
 @media (max-width: 767.98px) {
   .hero-section {
-    /* mobile navbar height (~72px) + 3rem = ~120px total clearance */
-    padding-top: calc(72px + 3rem);
-    padding-bottom: 5.5rem;
+    /* mobile navbar height (~72px) + 2.5rem clearance */
+    padding-top: calc(72px + 2.5rem);
+    padding-bottom: 4.5rem;
     min-height: 100svh;
     justify-content: flex-start;
+    /* Pure deep dark background matching /services with subtle low-opacity ambient light */
+    background-color: #040807;
+    background-image: radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.08) 0%, rgba(4, 8, 7, 1) 70%);
+  }
+
+  /* Completely disable overpowering teal/cyan glow orbs on mobile */
+  .glow-circle {
+    display: none !important;
+  }
+
+  /* Muted subtle grid overlay */
+  .hero-grid-overlay {
+    opacity: 0.2;
   }
 
   .hero-title {
     font-size: clamp(2.1rem, 9vw, 3rem);
     letter-spacing: -0.025em;
+    color: #ffffff;
   }
 
   .hero-subtitle {
     font-size: 1rem;
     padding: 0 0.25rem;
+    color: #9ca3af;
   }
 
   .hero-actions {

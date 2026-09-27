@@ -14,15 +14,16 @@ if (!fs.existsSync(templatePath)) {
 
 const template = fs.readFileSync(templatePath, 'utf8');
 
-const baseUrl = 'https://3stack.agency';
+const baseUrl = 'https://3stack.in';
 
 // Base schemas
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   '@id': `${baseUrl}/#organization`,
-  'name': '3Stack IT Agency',
-  'legalName': '3Stack Digital Agency',
+  'name': '3Stack',
+  'alternateName': ['3 Stack', '3Stack Agency', '3Stack IT Agency', '3Stack Digital Agency'],
+  'legalName': '3Stack IT Agency',
   'url': baseUrl,
   'logo': `${baseUrl}/3stack-logo.png`,
   'email': '3stacktech@gmail.com',
@@ -44,7 +45,8 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': `${baseUrl}/#localbusiness`,
-  'name': '3Stack IT Agency',
+  'name': '3Stack',
+  'alternateName': ['3 Stack', '3Stack IT Agency'],
   'image': `${baseUrl}/3stack-logo.png`,
   'url': baseUrl,
   'telephone': '+91-8306099337',
@@ -67,8 +69,8 @@ const localBusinessSchema = {
 const routes = [
   {
     path: '/',
-    title: '3Stack IT Agency | Premium Web Development, Mobile Apps & AI Digital Marketing',
-    description: '3Stack is an elite IT agency in Jaipur specializing in custom web development, React Native mobile apps, business automation, and AI-driven digital marketing.',
+    title: '3Stack — Premium Web Development & Digital Marketing Agency | 3stack.in',
+    description: '3Stack is a premier software engineering and digital marketing agency specializing in custom web applications, mobile apps, and business automation for high-growth brands.',
     canonical: `${baseUrl}`,
     noindex: false,
     breadcrumbs: [{ name: 'Home', url: '/' }],
@@ -79,9 +81,10 @@ const routes = [
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
-        'name': '3Stack IT Agency',
+        'name': '3Stack',
+        'alternateName': '3 Stack',
         'url': baseUrl,
-        'description': 'Premium Web & App Development, Custom Software, and AI-Driven Digital Marketing Agency in Jaipur and globally.',
+        'description': '3Stack provides high-performance web development, digital growth marketing, and intelligent business automation solutions.',
         'publisher': { '@id': `${baseUrl}/#organization` }
       },
       {
@@ -876,7 +879,7 @@ for (const r of routes) {
     <meta property="og:title" content="${r.title}" />
     <meta property="og:description" content="${r.description}" />
     <meta property="og:url" content="${r.canonical}" />
-    <meta property="og:site_name" content="3Stack IT Agency" />
+    <meta property="og:site_name" content="3Stack" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="${baseUrl}/3stack-logo.png" />
     <meta name="twitter:card" content="summary_large_image" />

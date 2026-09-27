@@ -51,9 +51,9 @@ export default function Work() {
   return (
     <>
       <SEOHead
-        title="Our Work & Case Studies | 3Stack IT Agency"
+        title="Our Work & Case Studies | 3Stack"
         description="Explore 3Stack's portfolio of custom web development, mobile applications, and digital marketing case studies delivered for growing businesses."
-        keywords="Portfolio, Case Studies, Web Development Projects, Custom App Development, Digital Marketing Results, 3Stack Work, Best Web Design"
+        keywords="3Stack portfolio, 3Stack work, 3Stack, 3 Stack, 3stack.in, Portfolio, Case Studies, Web Development Projects, Custom App Development, Digital Marketing Results, Best Web Design"
         breadcrumbs={breadcrumbs}
       />
       <section

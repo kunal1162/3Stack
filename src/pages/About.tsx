@@ -10,8 +10,8 @@ export default function About() {
 
   const faqs = [
     { 
-      q: 'What exactly does 3Stack IT Agency do?',
-      a: 'We are a full-service digital and engineering agency headquartered in Jaipur, India. We engineer custom web applications (React, Node.js, Next.js), develop mobile applications (React Native, iOS, Android), execute AI-driven digital marketing and SEO campaigns, construct business automation pipelines, and provide certified AutoCAD drafting services.' 
+      q: 'What is 3Stack and what does 3Stack do?',
+      a: '3Stack (also known as 3 Stack) is a premier full-service software engineering and digital marketing agency based in Jaipur, India. We engineer custom web applications (React, Node.js), develop mobile applications (iOS, Android, React Native), execute AI-driven digital marketing and SEO campaigns, construct business automation pipelines, and provide certified AutoCAD drafting services.' 
     },
     { 
       q: 'Where does 3Stack operate and who do you serve?', 
@@ -51,7 +51,7 @@ export default function About() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    '@id': 'https://3stack.agency/about/#faq',
+    '@id': 'https://3stack.in/about/#faq',
     mainEntity: faqs.map(faq => ({
       '@type': 'Question',
       name: faq.q,
@@ -65,9 +65,9 @@ export default function About() {
   return (
     <>
       <SEOHead
-        title="About Us | 3Stack IT Agency"
-        description="Learn about 3Stack IT Agency: our technical mission, full-stack engineering team in Jaipur, and commitment to building scalable digital platforms for businesses worldwide."
-        keywords="About 3Stack, Digital Agency Jaipur, IT Agency India, Premium Web Developers, Expert App Developers, UI/UX Experts, Tech Startup Partner"
+        title="About Us | 3Stack"
+        description="Learn about 3Stack: our technical mission, full-stack engineering team in Jaipur, and commitment to building scalable digital platforms for businesses worldwide."
+        keywords="About 3Stack, 3Stack, 3 Stack, 3Stack agency, 3stack.in, Digital Agency Jaipur, IT Agency India, Premium Web Developers, Expert App Developers"
         breadcrumbs={breadcrumbs}
         schema={faqSchema}
       />

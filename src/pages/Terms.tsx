@@ -10,8 +10,9 @@ export default function Terms() {
   return (
     <>
       <SEOHead
-        title="Terms of Service | 3Stack IT Agency"
-        description="Review the terms and conditions governing professional services provided by 3Stack IT Agency."
+        title="Terms of Service | 3Stack"
+        description="Review the terms and conditions governing professional services provided by 3Stack."
+        keywords="Terms of Service, 3Stack Terms, 3Stack, 3 Stack, 3stack.in"
         breadcrumbs={breadcrumbs}
       />
       <section className="section" style={{ paddingTop: '140px', minHeight: '80vh' }}>

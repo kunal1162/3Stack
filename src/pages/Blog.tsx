@@ -11,9 +11,9 @@ export default function Blog() {
   return (
     <>
       <SEOHead
-        title="Blog & Insights | 3Stack IT Agency"
-        description="Read in-depth technical insights, architectural guides, and digital marketing strategies from 3Stack IT Agency."
-        keywords="IT Agency Blog, Tech Trends 2026, Web Development Articles, Digital Marketing Tips, SEO Guides, Custom Software Insights"
+        title="Blog & Insights | 3Stack"
+        description="Read in-depth technical insights, architectural guides, and digital marketing strategies from 3Stack."
+        keywords="3Stack blog, 3Stack, 3 Stack, 3stack.in, IT Agency Blog, Tech Trends 2026, Web Development Articles, Digital Marketing Tips, SEO Guides, Custom Software Insights"
         breadcrumbs={breadcrumbs}
       />
       <section className="section" style={{ paddingTop: '140px', minHeight: '80vh' }}>

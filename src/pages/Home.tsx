@@ -90,7 +90,7 @@ export default function Home() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    '@id': 'https://3stack.agency/#faq',
+    '@id': 'https://3stack.in/#faq',
     mainEntity: homeFaqs.map(faq => ({
       '@type': 'Question',
       name: faq.q,
@@ -104,9 +104,9 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="3Stack IT Agency | Premium Web Development, Mobile Apps & AI Digital Marketing"
-        description="3Stack is an elite IT agency in Jaipur specializing in custom web development, React Native mobile apps, business automation, and AI-driven digital marketing."
-        keywords="Top IT Agency, Web Development Company Jaipur, Digital Marketing Services, Custom Software Development, Mobile App Developers India, Tech Agency Jaipur, Business Automation"
+        title="3Stack — Premium Web Development & Digital Marketing Agency | 3stack.in"
+        description="3Stack is a premier software engineering and digital marketing agency specializing in custom web applications, mobile apps, and business automation for high-growth brands."
+        keywords="3Stack, 3 Stack, 3Stack agency, 3stack.in, 3Stack IT Agency, 3Stack web development, 3Stack Jaipur, digital marketing agency, custom web development"
         breadcrumbs={breadcrumbs}
         schema={faqSchema}
       />

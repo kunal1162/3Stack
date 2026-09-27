@@ -34,14 +34,14 @@ export default function ServiceDetails() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://3stack.agency/services/${service.id}/#service`,
+    '@id': `https://3stack.in/services/${service.id}/#service`,
     'name': service.title,
     'serviceType': service.title,
     'description': service.seoDescription,
     'provider': {
       '@type': 'Organization',
-      '@id': 'https://3stack.agency/#organization',
-      'name': '3Stack IT Agency'
+      '@id': 'https://3stack.in/#organization',
+      'name': '3Stack'
     },
     'areaServed': {
       '@type': 'Country',
@@ -52,7 +52,7 @@ export default function ServiceDetails() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    '@id': `https://3stack.agency/services/${service.id}/#faq`,
+    '@id': `https://3stack.in/services/${service.id}/#faq`,
     'mainEntity': service.faqs.map(faq => ({
       '@type': 'Question',
       'name': faq.q,

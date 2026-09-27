@@ -4,7 +4,7 @@ import { StaticRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 
-export function render(url: string, helmetContext: any) {
+export function render(url: string, helmetContext: Record<string, unknown>) {
   const html = ReactDOMServer.renderToString(
     <React.StrictMode>
       <HelmetProvider context={helmetContext}>

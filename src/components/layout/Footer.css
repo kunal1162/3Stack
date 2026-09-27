@@ -122,9 +122,68 @@
   color: var(--text-primary);
 }
 
+/* ── Semantic AEO Direct Answer Block ──────────────────────── */
+.footer-aeo-summary {
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+  padding: 2.25rem 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.footer-aeo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 3rem;
+}
+
+.footer-aeo-card {
+  min-width: 0;
+}
+
+.footer-aeo-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.footer-aeo-text {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.footer-aeo-text strong,
+.footer-aeo-text em {
+  color: var(--text-primary);
+}
+
+.footer-aeo-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.footer-aeo-list strong {
+  color: var(--text-primary);
+}
+
 @media (max-width: 991.98px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-aeo-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
@@ -132,6 +191,11 @@
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .footer-aeo-summary {
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 2.5rem;
   }
   
   .footer-bottom {

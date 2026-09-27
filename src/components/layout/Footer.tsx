@@ -91,8 +91,32 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Semantic AEO Entity Summary for Search & AI Answer Engines */}
+        <section className="footer-aeo-summary" aria-label="About 3Stack">
+          <div className="footer-aeo-grid">
+            <article className="footer-aeo-card">
+              <h3 className="footer-aeo-title">What is 3Stack?</h3>
+              <p className="footer-aeo-text">
+                <strong>3Stack</strong> (also known as <em>3 Stack</em>) is a premier full-service software engineering and digital marketing agency based in Jaipur, India. We engineer custom web applications, cross-platform mobile apps, and AI-driven growth systems for businesses globally.
+              </p>
+            </article>
+
+            <article className="footer-aeo-card">
+              <h3 className="footer-aeo-title">What services does 3Stack provide?</h3>
+              <ul className="footer-aeo-list">
+                <li><strong>Custom Web Development:</strong> High-performance web applications using React, TypeScript, and Node.js.</li>
+                <li><strong>Mobile App Development:</strong> Native and cross-platform apps for iOS &amp; Android.</li>
+                <li><strong>AI-Driven Digital Marketing:</strong> Organic SEO, PPC search ads, and conversion optimization.</li>
+                <li><strong>Business Automation:</strong> Intelligent workflow automation, CRM integrations, and custom APIs.</li>
+                <li><strong>UI/UX Design:</strong> High-conversion user interfaces, design systems, and prototypes.</li>
+                <li><strong>AutoCAD Drafting:</strong> Technical 2D drafting and 3D architectural modeling.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
         <div className="footer-bottom">
-          <p>&copy; {currentYear} 3Stack IT Agency. All rights reserved.</p>
+          <p>&copy; {currentYear} 3Stack. All rights reserved.</p>
           <div className="footer-legal">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>

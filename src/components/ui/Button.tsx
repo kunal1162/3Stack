@@ -36,14 +36,14 @@ export const Button: React.FC<ButtonProps> = ({
     // If it's an external link
     if (href.startsWith('http') || href.startsWith('mailto:')) {
       return (
-        <a href={href} className={baseClass} onClick={props.onClick as any} target="_blank" rel="noopener noreferrer">
+        <a href={href} className={baseClass} onClick={props.onClick as unknown as React.MouseEventHandler<HTMLAnchorElement>} target="_blank" rel="noopener noreferrer">
           {content}
         </a>
       );
     }
     // If it's an internal route
     return (
-      <Link to={href} className={baseClass} onClick={props.onClick as any}>
+      <Link to={href} className={baseClass} onClick={props.onClick as unknown as React.MouseEventHandler<HTMLAnchorElement>}>
         {content}
       </Link>
     );

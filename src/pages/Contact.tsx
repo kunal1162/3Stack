@@ -34,10 +34,10 @@ export default function Contact() {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'ZKFzsiwVRPk6Y5yv_';
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((_result) => {
+      .then(() => {
           setStatus('success');
           form.current?.reset();
-      }, (_error) => {
+      }, () => {
           setStatus('error');
       });
   };
@@ -50,9 +50,9 @@ export default function Contact() {
   return (
     <>
       <SEOHead
-        title="Contact Us | 3Stack IT Agency"
-        description="Get in touch with 3Stack IT Agency in Jaipur. Schedule a 30-minute discovery call to discuss web development, mobile apps, or digital marketing."
-        keywords="Contact 3Stack, Hire IT Agency Jaipur, Web Development Quote, App Development Consultation, Digital Marketing Agency Contact"
+        title="Contact Us | 3Stack"
+        description="Get in touch with 3Stack in Jaipur. Schedule a 30-minute discovery call to discuss web development, mobile apps, or digital marketing."
+        keywords="Contact 3Stack, 3Stack, 3 Stack, 3stack.in, Hire IT Agency Jaipur, Web Development Quote, App Development Consultation, Digital Marketing Agency Contact"
         breadcrumbs={breadcrumbs}
       />
 
