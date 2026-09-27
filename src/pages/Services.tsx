@@ -87,9 +87,9 @@ export default function Services() {
 
       {/* Services Header */}
       <section className="section services-header" style={{ position: 'relative', overflow: 'hidden', padding: '140px 0 60px' }}>
-        {/* Glow Effects */}
-        <div style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '600px', height: '600px', background: 'var(--accent-primary)', opacity: '0.1', filter: 'blur(120px)', zIndex: 0, borderRadius: '50%' }}></div>
-        <div style={{ position: 'absolute', bottom: '0', right: '-10%', width: '400px', height: '400px', background: 'var(--accent-secondary)', opacity: '0.1', filter: 'blur(100px)', zIndex: 0, borderRadius: '50%' }}></div>
+        {/* Glow Effects — capped at 90vw to never cause horizontal scroll */}
+        <div style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: 'min(600px, 90vw)', height: 'min(600px, 90vw)', background: 'var(--accent-primary)', opacity: '0.1', filter: 'blur(120px)', zIndex: 0, borderRadius: '50%', pointerEvents: 'none' }}></div>
+        <div style={{ position: 'absolute', bottom: '0', right: '-5%', width: 'min(400px, 70vw)', height: 'min(400px, 70vw)', background: 'var(--accent-secondary)', opacity: '0.1', filter: 'blur(100px)', zIndex: 0, borderRadius: '50%', pointerEvents: 'none' }}></div>
         
         <div className="container text-center" style={{ position: 'relative', zIndex: 1, maxWidth: '900px' }}>
           {/* Breadcrumbs */}
@@ -114,11 +114,11 @@ export default function Services() {
             We architect comprehensive digital ecosystems designed to elevate your brand, automate operations, and drive measurable, compound business growth.
           </p>
           
-          <div className="animate-fade-in-up delay-300" style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="animate-fade-in-up delay-300" style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', overflow: 'hidden', padding: '0.25rem 0' }}>
             {services.map((s, i) => (
-              <a href={`#${s.id}`} key={i} style={{ padding: '0.6rem 1.1rem', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '50px', color: 'var(--text-secondary)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem', transition: 'all 0.3s' }} className="service-pill">
-                <span style={{ color: 'var(--accent-primary)' }}>{s.icon}</span>
-                {s.title}
+              <a href={`#${s.id}`} key={i} style={{ padding: '0.6rem 1.1rem', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '50px', color: 'var(--text-secondary)', fontSize: '0.875rem', display: 'flex', alignItems: 'center', gap: '0.5rem', transition: 'all 0.3s', maxWidth: '100%', overflow: 'hidden' }} className="service-pill">
+                <span style={{ color: 'var(--accent-primary)', flexShrink: 0 }}>{s.icon}</span>
+                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.title}</span>
               </a>
             ))}
           </div>

@@ -198,7 +198,7 @@ export default function Home() {
             <h2 className="section-title">Our Expertise</h2>
             <p className="section-subtitle">Comprehensive digital solutions engineered to scale your business in the modern economy.</p>
           </div>
-          <div className="grid grid-cols-3 gap-md mt-lg">
+          <div className="grid grid-cols-3 gap-md mt-lg services-grid">
             {services.map((service, index) => (
               <ServiceCard 
                 key={service.id}

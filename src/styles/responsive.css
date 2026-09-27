@@ -15,6 +15,11 @@
   .section {
     padding: 4rem 0;
   }
+
+  /* Services grid: 2 columns at tablet, tighter gap */
+  .services-grid {
+    gap: var(--space-sm);
+  }
 }
 
 /* Small Devices (Landscape phones, less than 768px) */
@@ -29,6 +34,14 @@
   
   .container {
     padding: 0 var(--space-sm);
+  }
+}
+
+/* Services grid: 2-column bento on phones */
+@media (max-width: 639px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.625rem; /* 10px */
   }
 }
 

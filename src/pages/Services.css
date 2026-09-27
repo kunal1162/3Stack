@@ -1,14 +1,26 @@
+/* ============================================================
+   Services Page — Mobile-first, overflow-safe layout
+   ============================================================ */
+
 .services-header {
   padding-top: 160px;
   padding-bottom: 3rem;
+  overflow: hidden; /* clip absolute glow blobs */
 }
 
+/* ── Service pills nav ──────────────────────────────────────── */
+.service-pill {
+  white-space: nowrap; /* keep each pill on one line */
+}
+
+/* ── Card stack ─────────────────────────────────────────────── */
 .services-stack {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
+/* ── Individual service card ────────────────────────────────── */
 .service-detail-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,6 +28,9 @@
   align-items: center;
   padding: 4rem 0;
   border-bottom: 1px solid var(--border-color);
+  /* Safety: never let a card push past the parent */
+  width: 100%;
+  min-width: 0;
 }
 
 .service-detail-card:last-child {
@@ -31,6 +46,13 @@
   order: 1;
 }
 
+/* ── Content column ─────────────────────────────────────────── */
+.service-detail-content {
+  min-width: 0; /* allow text to shrink below its natural size */
+  overflow: hidden;
+}
+
+/* ── Icon ───────────────────────────────────────────────────── */
 .service-icon-large {
   width: 70px;
   height: 70px;
@@ -42,24 +64,33 @@
   justify-content: center;
   margin-bottom: 2rem;
   box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+  flex-shrink: 0;
 }
 
+/* ── Heading ────────────────────────────────────────────────── */
 .service-detail-card h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.5rem); /* fluid — never overflows */
   margin-bottom: 1.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
+/* ── Description ────────────────────────────────────────────── */
 .service-description {
   font-size: 1.1rem;
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 2rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
+/* ── Feature list ───────────────────────────────────────────── */
 .feature-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .feature-list li {
@@ -68,10 +99,23 @@
   gap: 0.75rem;
   font-size: 1rem;
   color: var(--text-primary);
+  min-width: 0; /* allow flex children to shrink */
+  word-break: break-word;
+}
+
+.feature-list li span {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .text-accent {
   color: var(--accent-primary);
+  flex-shrink: 0; /* icon should never be squished */
+}
+
+/* ── Visual column ──────────────────────────────────────────── */
+.service-detail-visual {
+  min-width: 0;
 }
 
 .visual-card {
@@ -81,6 +125,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .visual-placeholder {
@@ -109,20 +154,88 @@
   z-index: 1;
 }
 
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Tablet — collapse to single column */
 @media (max-width: 991.98px) {
   .service-detail-card {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     padding: 3rem 0;
   }
-  
+
+  /* Image always on top on mobile/tablet */
   .service-detail-card .service-detail-visual {
-    order: -1;
+    order: -1 !important;
+  }
+
+  /* Reset order for even cards */
+  .service-detail-card:nth-child(even) .service-detail-content {
+    order: unset;
+  }
+
+  .service-detail-card:nth-child(even) .service-detail-visual {
+    order: -1 !important;
+  }
+
+  .services-stack {
+    gap: 3rem;
   }
 }
 
+/* Small phone — tighten up further */
 @media (max-width: 767.98px) {
+  .services-header {
+    padding-top: 120px;
+  }
+
   .feature-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column on small phones */
+    gap: 0.75rem;
+  }
+
+  .service-detail-card h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .service-description {
+    font-size: 1rem;
+  }
+
+  .services-stack {
+    gap: 2rem;
+  }
+
+  .service-detail-card {
+    gap: 2rem;
+    padding: 2.5rem 0;
+  }
+
+  /* CTA box */
+  .cta-box {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Extra small — 375px and below */
+@media (max-width: 480px) {
+  .service-icon-large {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-detail-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .feature-list li {
+    font-size: 0.9rem;
   }
 }
