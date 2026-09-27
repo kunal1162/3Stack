@@ -67,7 +67,13 @@ export const Navbar: React.FC = () => {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
-          <img src="/3stack-logo.png" alt="3Stack Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
+          <img 
+            src="/3stack-logo.webp" 
+            alt="3Stack Logo" 
+            width={80}
+            height={60}
+            style={{ height: '60px', width: 'auto', aspectRatio: '1022 / 768', objectFit: 'contain' }} 
+          />
         </Link>
 
         {/* Desktop Navigation */}

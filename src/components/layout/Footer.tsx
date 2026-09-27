@@ -33,7 +33,14 @@ export const Footer: React.FC = () => {
           {/* Brand Col */}
           <div className="footer-col brand-col">
             <Link to="/" className="footer-logo">
-              <img src="/3stack-logo.png" alt="3Stack Logo" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+              <img 
+                src="/3stack-logo.webp" 
+                alt="3Stack Logo" 
+                width={107}
+                height={80}
+                loading="lazy"
+                style={{ height: '80px', width: 'auto', aspectRatio: '1022 / 768', objectFit: 'contain' }} 
+              />
             </Link>
             <p className="footer-description">
               Elevating brands through cutting-edge web development, digital marketing, and intelligent business automation.

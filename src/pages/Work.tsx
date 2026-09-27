@@ -172,7 +172,9 @@ export default function Work() {
                     src={project.image} 
                     alt={`${project.title} - ${project.category} Case Study by 3Stack`} 
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} 
+                    width={800}
+                    height={500}
+                    style={{ width: "100%", height: "100%", aspectRatio: "8 / 5", objectFit: "cover", display: "block" }} 
                   />
                   <div
                     style={{

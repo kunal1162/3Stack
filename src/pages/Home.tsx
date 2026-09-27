@@ -104,9 +104,10 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="3Stack — Premium Web Development & Digital Marketing Agency | 3stack.in"
-        description="3Stack is a premier software engineering and digital marketing agency specializing in custom web applications, mobile apps, and business automation for high-growth brands."
+        title="3Stack — Web Development & Digital Marketing Agency"
+        description="3Stack builds high-performance web apps and drives revenue growth through digital marketing and intelligent automation."
         keywords="3Stack, 3 Stack, 3Stack agency, 3stack.in, 3Stack IT Agency, 3Stack web development, 3Stack Jaipur, digital marketing agency, custom web development"
+        canonicalUrl="https://3stack.in/"
         breadcrumbs={breadcrumbs}
         schema={faqSchema}
       />
@@ -250,9 +251,11 @@ export default function Home() {
               <div className="glass-card decorative-card" style={{ position: 'relative', height: '360px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', padding: 0 }}>
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
-                  alt="3Stack IT Agency Engineers Designing High-Performance Software" 
+                  alt="3Stack Engineers Designing High-Performance Software" 
                   loading="lazy"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
+                  width={800}
+                  height={533}
+                  style={{ width: '100%', height: '100%', aspectRatio: '800 / 533', objectFit: 'cover', display: 'block' }} 
                 />
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, rgba(7,7,7,0.85) 0%, rgba(7,7,7,0.3) 100%)', zIndex: 1 }}></div>
                 <div style={{ position: 'relative', zIndex: 2, padding: '1.5rem', height: '100%', display: 'flex', flexDirection: 'column' }}>

@@ -41,9 +41,11 @@ export default function Blog() {
                   <div style={{ height: '200px', overflow: 'hidden', position: 'relative' }}>
                     <img 
                       src={post.image} 
-                      alt={`${post.title} - 3Stack IT Agency`} 
+                      alt={`${post.title} - 3Stack`} 
                       loading="lazy" 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
+                      width={600}
+                      height={400}
+                      style={{ width: '100%', height: '100%', aspectRatio: '3 / 2', objectFit: 'cover', display: 'block' }} 
                     />
                   </div>
                   <div style={{ padding: '2rem' }}>

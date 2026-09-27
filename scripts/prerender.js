@@ -46,13 +46,29 @@ const localBusinessSchema = {
   '@type': 'ProfessionalService',
   '@id': `${baseUrl}/#localbusiness`,
   'name': '3Stack',
-  'alternateName': ['3 Stack', '3Stack IT Agency'],
+  'alternateName': ['3 Stack', '3Stack Agency', '3Stack IT Agency', '3Stack Digital Agency'],
   'image': `${baseUrl}/3stack-logo.png`,
   'url': baseUrl,
   'telephone': '+91-8306099337',
   'email': '3stacktech@gmail.com',
   'priceRange': '$$',
-  'openingHours': 'Mo-Fr 09:00-18:00',
+  'currenciesAccepted': 'INR, USD, EUR, GBP, AED',
+  'paymentAccepted': 'Cash, Credit Card, Bank Transfer, UPI',
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+      'opens': '09:00',
+      'closes': '19:00'
+    }
+  ],
   'address': {
     '@type': 'PostalAddress',
     'streetAddress': 'Jaipur',
@@ -61,6 +77,25 @@ const localBusinessSchema = {
     'postalCode': '302012',
     'addressCountry': 'IN'
   },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 26.9124,
+    'longitude': 75.7873
+  },
+  'areaServed': [
+    {
+      '@type': 'Country',
+      'name': 'India'
+    },
+    {
+      '@type': 'Country',
+      'name': 'United States'
+    },
+    {
+      '@type': 'Country',
+      'name': 'United Arab Emirates'
+    }
+  ],
   'parentOrganization': {
     '@id': `${baseUrl}/#organization`
   }
@@ -69,9 +104,9 @@ const localBusinessSchema = {
 const routes = [
   {
     path: '/',
-    title: '3Stack — Premium Web Development & Digital Marketing Agency | 3stack.in',
-    description: '3Stack is a premier software engineering and digital marketing agency specializing in custom web applications, mobile apps, and business automation for high-growth brands.',
-    canonical: `${baseUrl}`,
+    title: '3Stack — Web Development & Digital Marketing Agency',
+    description: '3Stack builds high-performance web apps and drives revenue growth through digital marketing and intelligent automation.',
+    canonical: `${baseUrl}/`,
     noindex: false,
     breadcrumbs: [{ name: 'Home', url: '/' }],
     schemas: [
@@ -889,13 +924,14 @@ for (const r of routes) {
   `;
   html = html.replace('</head>', `${ogTags}\n</head>`);
 
-  // 6. Assemble JSON-LD Schemas
+  // 6. Assemble JSON-LD Schemas (Strip template scripts first to prevent duplicate schemas)
   const allSchemas = [...r.schemas];
   if (r.breadcrumbs && r.breadcrumbs.length > 0) {
     allSchemas.push(buildBreadcrumbSchema(r.breadcrumbs));
   }
-  const jsonLdScript = `\n  <script type="application/ld+json">\n${JSON.stringify(allSchemas, null, 2)}\n  </script>\n`;
-  html = html.replace('</head>', `${jsonLdScript}</head>`);
+  html = html.replace(/<script type="application\/ld\+json"[\s\S]*?<\/script>\s*/gi, '');
+  const jsonLdScript = `\n  <script type="application/ld+json" data-rh="true">\n${JSON.stringify(allSchemas, null, 2)}\n  </script>\n`;
+  html = html.replace('</head>', () => `${jsonLdScript}</head>`);
 
   // 7. Inject crawlable semantic HTML into <div id="root"></div>
   const footerHtml = `

@@ -32,12 +32,12 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   // Prevent duplicate branding in title
   const siteTitle = title.includes('3Stack') ? title : `${title} | 3Stack`;
   
-  // Dynamically resolve canonical URL for SEO indexing targeting 3stack.in
+  // Dynamically resolve canonical URL for SEO indexing targeting 3stack.in (strict https://3stack.in/ root)
   const baseUrl = 'https://3stack.in';
   const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-  const cleanPath = currentPath === '/' ? '' : currentPath.replace(/\/+$/, '');
-  const finalCanonicalUrl = canonicalUrl || `${baseUrl}${cleanPath}`;
   const isHomePage = currentPath === '' || currentPath === '/';
+  const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/+$/, '');
+  const finalCanonicalUrl = canonicalUrl || (isHomePage ? 'https://3stack.in/' : `${baseUrl}${cleanPath}`);
 
   // Primary Organization Schema with branded alternate names for AEO/Knowledge Graph
   const orgSchema = {
@@ -65,19 +65,35 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     ]
   };
 
-  // LocalBusiness Schema for verified NAP & Local SEO
+  // LocalBusiness / ProfessionalService Schema for verified NAP & Local SEO
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     '@id': `${baseUrl}/#localbusiness`,
     'name': '3Stack',
-    'alternateName': ['3 Stack', '3Stack IT Agency'],
+    'alternateName': ['3 Stack', '3Stack Agency', '3Stack IT Agency', '3Stack Digital Agency'],
     'image': `${baseUrl}/3stack-logo.png`,
     'url': baseUrl,
     'telephone': '+91-8306099337',
     'email': '3stacktech@gmail.com',
     'priceRange': '$$',
-    'openingHours': 'Mo-Fr 09:00-18:00',
+    'currenciesAccepted': 'INR, USD, EUR, GBP, AED',
+    'paymentAccepted': 'Cash, Credit Card, Bank Transfer, UPI',
+    'openingHoursSpecification': [
+      {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': [
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday'
+        ],
+        'opens': '09:00',
+        'closes': '19:00'
+      }
+    ],
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'Jaipur',
@@ -86,6 +102,25 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       'postalCode': '302012',
       'addressCountry': 'IN'
     },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 26.9124,
+      'longitude': 75.7873
+    },
+    'areaServed': [
+      {
+        '@type': 'Country',
+        'name': 'India'
+      },
+      {
+        '@type': 'Country',
+        'name': 'United States'
+      },
+      {
+        '@type': 'Country',
+        'name': 'United Arab Emirates'
+      }
+    ],
     'parentOrganization': {
       '@id': `${baseUrl}/#organization`
     }
