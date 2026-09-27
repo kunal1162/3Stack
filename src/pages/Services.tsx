@@ -157,11 +157,9 @@ export default function Services() {
                   <div className="glass-card visual-card" style={{ position: 'relative', overflow: 'hidden', padding: 0 }}>
                     <img 
                       src={service.image} 
-                      alt={`${service.title} by 3Stack`} 
+                      alt={`${service.title} by 3Stack IT Agency`} 
                       loading="lazy"
-                      width={800}
-                      height={500}
-                      style={{ width: '100%', height: '100%', aspectRatio: '16 / 10', objectFit: 'cover', display: 'block' }} 
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
                     />
                     <div className="visual-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, var(--bg-primary) 0%, transparent 100%)', opacity: 0.8, pointerEvents: 'none' }}></div>
                   </div>

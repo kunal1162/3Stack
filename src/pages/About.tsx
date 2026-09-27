@@ -105,11 +105,8 @@ export default function About() {
           <div className="animate-fade-in-up delay-100" style={{ marginBottom: '5rem', width: '100%', height: '400px', borderRadius: 'var(--radius-lg)', position: 'relative', overflow: 'hidden' }}>
              <img 
                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" 
-               alt="3Stack Team Collaborating in Office" 
-               loading="lazy"
-               width={1200}
-               height={400}
-               style={{ width: '100%', height: '100%', aspectRatio: '3 / 1', objectFit: 'cover', display: 'block' }} 
+               alt="3Stack IT Agency Team Collaborating in Office" 
+               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
              />
              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(7,7,7,0.85) 0%, transparent 100%)' }}></div>
           </div>

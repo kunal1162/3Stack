@@ -121,10 +121,7 @@ export default function BlogDetail() {
             <img 
               src={article.image} 
               alt={article.title} 
-              loading="lazy"
-              width={1200}
-              height={400}
-              style={{ width: '100%', height: '100%', aspectRatio: '3 / 1', objectFit: 'cover', display: 'block' }} 
+              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
             />
           </div>
 
