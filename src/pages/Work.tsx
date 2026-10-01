@@ -12,7 +12,7 @@ export default function Work() {
       image:
         "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80",
       stats: "Interactive Design",
-      link: "https://royalwedding-one.vercel.app",
+      link: "",
     },
     {
       title: "Gym Website",
@@ -233,27 +233,50 @@ export default function Work() {
                       paddingTop: "1.5rem",
                     }}
                   >
-                    <a
-                      href={project.link}
-                      style={{
-                        color: "var(--text-primary)",
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "0.5rem",
-                        fontWeight: 600,
-                        transition: "color 0.3s ease",
-                      }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onMouseOver={(e) =>
-                        (e.currentTarget.style.color = "var(--accent-primary)")
-                      }
-                      onMouseOut={(e) =>
-                        (e.currentTarget.style.color = "var(--text-primary)")
-                      }
-                    >
-                      Visit Live Site <ArrowUpRight size={18} />
-                    </a>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        style={{
+                          color: "var(--text-primary)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                          fontWeight: 600,
+                          transition: "color 0.3s ease",
+                        }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseOver={(e) =>
+                          (e.currentTarget.style.color = "var(--accent-primary)")
+                        }
+                        onMouseOut={(e) =>
+                          (e.currentTarget.style.color = "var(--text-primary)")
+                        }
+                      >
+                        Visit Live Site <ArrowUpRight size={18} />
+                      </a>
+                    ) : (
+                      <span
+                        className="px-3 py-1 rounded-full bg-neutral-800/80 text-neutral-400 text-xs border border-white/5 pointer-events-none cursor-not-allowed inline-flex items-center gap-1.5 font-medium"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "0.375rem",
+                          padding: "0.25rem 0.75rem",
+                          borderRadius: "9999px",
+                          backgroundColor: "rgba(38, 38, 38, 0.8)",
+                          color: "#a3a3a3",
+                          fontSize: "0.75rem",
+                          fontWeight: 500,
+                          border: "1px solid rgba(255, 255, 255, 0.08)",
+                          cursor: "not-allowed",
+                          pointerEvents: "none",
+                          userSelect: "none",
+                        }}
+                      >
+                        Coming Soon
+                      </span>
+                    )}
                   </div>
                 </div>
               </article>
